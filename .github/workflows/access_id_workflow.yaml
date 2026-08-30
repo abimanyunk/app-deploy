@@ -1,11 +1,18 @@
-name: Access ID Workflow
+name: deploy-app
 
 on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
   push:
+    branches:
+      - main
 
 jobs:
-  print-access-id:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Print ACCESS_ID
-        run: echo 'The ACCESS_ID is "${{ vars.ACCESS_ID }}"'
+      - name: Deploy app
+        run: echo "Deploying app..."
