@@ -1,4 +1,4 @@
-name: Manual Validation Workflow
+name: Manual Parameterized
 
 on:
   workflow_dispatch:
