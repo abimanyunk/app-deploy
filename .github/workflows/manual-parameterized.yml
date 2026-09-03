@@ -1,4 +1,4 @@
-name: Manual Parameterized
+name: manual-parameterized
 
 on:
   workflow_dispatch:
